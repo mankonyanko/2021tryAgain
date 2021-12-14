@@ -1,10 +1,14 @@
 #include <iostream>
+#include <string>
+#include "animal.h"
+#include "vr.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "hello, Git!" << endl;
-
-	return 0;
+	vrHMD *whoAmI = new quest2();
+	whoAmI->setType("internal");
+	whoAmI->whatType();
 }
+
